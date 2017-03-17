@@ -20,7 +20,7 @@ datetime <- strptime(paste(select_dates$Date, select_dates$Time), "%Y-%m-%d %H:%
 plot(datetime, select_dates$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 lines(datetime, select_dates$Sub_metering_2, col = "red", type = "l")
 lines(datetime, select_dates$Sub_metering_3, col = "blue")
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, lwd = 2, col = c("black", "red", "blue"), y.intersp = 0.6, cex = 0.75)
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = 1, lwd = 2, col = c("black", "red", "blue"), y.intersp = 0.5, cex = 0.8)
 
 ## Create PNG
 dev.copy(png, file = "plot3.png", height = 480, width = 480)
